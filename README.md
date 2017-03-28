@@ -64,6 +64,10 @@ open http://localhost:9000/webpack-dev-server/
 
 In progress...
 
+PREVIEW
+
+<a href="https://github.com/dennisfleischmann/stocks-watchlist">Stocks Watchlist</a>
+
 # License
 
 MIT
