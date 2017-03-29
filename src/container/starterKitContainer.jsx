@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import StarterKit from '../components/starterKit';
-import { changeButtonMsg, changeInputText } from '../actions/startKitActions';
+import { changeButtonMsg, changeInputText } from '../actions/starterKitActions';
 
 class StarterKitContainer extends Component {
   render() {

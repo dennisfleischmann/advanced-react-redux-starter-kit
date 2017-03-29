@@ -23,7 +23,7 @@ class StarterKit extends Component {
         <Row>
           <Col xs={12} md={12}>
             <Jumbotron>
-              <h1>Advanced React Redux Starter Kit</h1>
+              <h1>Advanced React Redux Starter</h1>
               <ul>
                 <li>Atomic Design approach</li>
                 <li><code>Separation</code> between Application and UI-Developer</li>
@@ -34,7 +34,6 @@ class StarterKit extends Component {
                 <li>Eslint configuarion <code>airbnb</code></li>
                 <li><code>Source-Map</code> in webpack preconfigured</li>
               </ul>
-              <p><small>by Dennis Fleischmann</small></p>
             </Jumbotron>
           </Col>
         </Row>

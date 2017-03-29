@@ -2,7 +2,7 @@ import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import StarterKit from './starterKitContainer';
-import starterKitReducer from '../reducers/startKitReducer';
+import starterKitReducer from '../reducers/starterKitReducer';
 
 /* eslint-disable no-underscore-dangle */
 const store = createStore(

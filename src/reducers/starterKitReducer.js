@@ -1,14 +1,14 @@
 import {
   CHANGE_BUTTON_MESSAGE,
   CHANGE_INPUT_TEXT,
-} from '../actions/startKitActions';
+} from '../actions/starterKitActions';
 
 /*
 initial state
  */
 
 const initialState = {
-  msg: 'This is my initial message',
+  msg: 'This is my initial message..',
   inputText: '',
 };
 
