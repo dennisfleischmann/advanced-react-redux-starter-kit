@@ -36,23 +36,23 @@ If using npm run
 
 <p>Run the development for creating new React components</p>
 
-<pre><code>npm run storybook
+<pre><code>yarn/npm run storybook
 open http://localhost:9001/
 </code></pre>
 
 <p>Create new components for the application developer</p>
 
-<code>/src/components/atoms/YOUR_NEW_REACT_ATOM_COMPONENT.jsx</code>
+<code>/src/components/atoms/YOUR_NEW_REACT_ATOM_COMPONENT.js</code>
 
 or
 
-<code>/src/components/YOUR_NEW_REACT_COMPONENT.jsx</code>
+<code>/src/components/YOUR_NEW_REACT_COMPONENT.js</code>
 
 # Usage for application developer, developing business logic
 
 <p>Run the development server and open the page</p>
 
-<pre><code>npm start
+<pre><code>yarn start
 open http://localhost:9000/webpack-dev-server/
 </code></pre>
 
