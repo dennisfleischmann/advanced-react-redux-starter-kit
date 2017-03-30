@@ -52,13 +52,13 @@ or
 
 <p>Run the development server and open the page</p>
 
-<pre><code>yarn start
+<pre><code>yarn/npm start
 open http://localhost:9000/webpack-dev-server/
 </code></pre>
 
 <p>Create new container by using already existing components, created by the UI developer</p>
 
-<code>/src/container/YOUR_NEW_CONTAINER.jsx</code>
+<code>/src/container/YOUR_NEW_CONTAINER.js</code>
 
 # Example
 
