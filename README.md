@@ -16,8 +16,8 @@ This project shows a possible solution how application developer and UI develope
 
 Clone the project
 
-<pre><code>git clone https://github.com/dennisfleischmann/advanced-react-redux-starter-kit.git
-cd advanced-react-redux-starter-kit
+<pre><code>git clone git@github.com:dennisfleischmann/react-redux-start-kit.git
+cd react-redux-starter-kit
 </code></pre>
 
 Install Packages
