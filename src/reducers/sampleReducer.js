@@ -1,7 +1,7 @@
 import {
   CHANGE_BUTTON_MESSAGE,
   CHANGE_INPUT_TEXT,
-} from '../actions/starterKitActions';
+} from '../actions/sampleActions';
 
 /*
 initial state

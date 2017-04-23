@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import StarterKit from '../components/starterKit';
-import { changeButtonMsg, changeInputText } from '../actions/starterKitActions';
+import SampleComponent from '../components/sampleComponent';
+import { changeButtonMsg, changeInputText } from '../actions/sampleActions';
 
-class StarterKitContainer extends Component {
+class SampleComponentContainer extends Component {
   render() {
     const {
       changeButtnMsgDispatch,
@@ -13,7 +13,7 @@ class StarterKitContainer extends Component {
     } = this.props;
 
     return (
-      <StarterKit
+      <SampleComponent
         onChange={event => changeInputTextDispatch(event.target.value)}
         onClick={() => { changeButtnMsgDispatch(inputText); }}
         msg={msg}
@@ -32,4 +32,4 @@ const mapDispatchToProps = (dispatch) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(StarterKitContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(SampleComponentContainer);

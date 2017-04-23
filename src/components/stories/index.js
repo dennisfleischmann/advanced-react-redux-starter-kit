@@ -6,7 +6,7 @@ import React Components for styling purposes without
 business/application logic
 */
 
-import StarterKit from '../starterKit';
+import SampleStory from '../sampleStory';
 import InputBox from '../atoms/inputBox';
 
 storiesOf('Inputbox', module)
@@ -14,7 +14,7 @@ storiesOf('Inputbox', module)
     <InputBox placeholder="Type text in here" />
   ));
 
-storiesOf('StarterKit Component', module)
+storiesOf('SampleStory Component', module)
   .add('Basic Layout', () => (
-    <StarterKit />
+    <SampleStory />
   ));

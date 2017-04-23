@@ -9,7 +9,7 @@ import {
 
 import InputBox from './atoms/inputBox';
 
-class StarterKit extends Component {
+class sampleComponent extends Component {
   render() {
     const {
       onChange,
@@ -59,10 +59,10 @@ class StarterKit extends Component {
   }
 }
 
-StarterKit.propTypes = {
+sampleComponent.propTypes = {
   onClick: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
   msg: PropTypes.string.isRequired,
 };
 
-export default StarterKit;
+export default sampleComponent;
