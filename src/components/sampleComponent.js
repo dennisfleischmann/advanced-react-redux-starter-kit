@@ -23,7 +23,7 @@ class sampleComponent extends Component {
         <Row>
           <Col xs={12} md={12}>
             <Jumbotron>
-              <h1>Advanced React Redux Starter</h1>
+              <h1>React Redux Start Kit</h1>
               <ul>
                 <li>Atomic Design approach</li>
                 <li><code>Separation</code> between Application and UI-Developer</li>
