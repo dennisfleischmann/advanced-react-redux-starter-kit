@@ -56,7 +56,7 @@ SampleComponentContainer.propTypes = {
   inputText: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = state => ({ msg: state.msg, inputText: state.inputText });
+const mapStateToProps = state => ({ msg: state.sampleReducer.msg, inputText: state.sampleReducer.inputText });
 
 const mapDispatchToProps = dispatch => ({
   changeButtnMsgDispatch: msg => dispatch(changeButtonMsg(msg)),
