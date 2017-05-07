@@ -13,10 +13,25 @@ import {
 } from '../components';
 
 class SampleComponentContainer extends Component {
-  render() {
+  handleButtonClick() {
     const {
       changeButtnMsgDispatch,
+      inputText,
+    } = this.props;
+
+    changeButtnMsgDispatch(inputText);
+  }
+
+  handleInputChange(event) {
+    const {
       changeInputTextDispatch,
+    } = this.props;
+
+    changeInputTextDispatch(event.target.value);
+  }
+
+  render() {
+    const {
       msg,
       inputText,
     } = this.props;
@@ -38,10 +53,10 @@ class SampleComponentContainer extends Component {
           </Jumbotron>
         </Row>
         <Row>
-           <InputBox value={inputText} onChange={event => changeInputTextDispatch(event.target.value)} />
+          <InputBox value={inputText} onChange={this.handleInputChange} />
         </Row>
         <Row>
-          <Button onClick={() => changeButtnMsgDispatch(inputText)} >Change Text</Button>
+          <Button onClick={this.handleButtonClick} >Change Text</Button>
         </Row>
         <Row>Message: {msg}</Row>
       </Page>
@@ -56,7 +71,10 @@ SampleComponentContainer.propTypes = {
   inputText: PropTypes.string.isRequired,
 };
 
-const mapStateToProps = state => ({ msg: state.sampleReducer.msg, inputText: state.sampleReducer.inputText });
+const mapStateToProps = state => ({
+  msg: state.sampleReducer.msg,
+  inputText: state.sampleReducer.inputText,
+});
 
 const mapDispatchToProps = dispatch => ({
   changeButtnMsgDispatch: msg => dispatch(changeButtonMsg(msg)),
