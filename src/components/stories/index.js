@@ -6,15 +6,10 @@ import React Components for styling purposes without
 business/application logic
 */
 
-import SampleStory from '../sampleStory';
-import InputBox from '../atoms/inputBox';
 
-storiesOf('Inputbox', module)
-  .add('Basic Layout', () => (
-    <InputBox placeholder="Type text in here" />
+storiesOf('Header Text', module)
+  .add('Header text', () => (
+    <h1> Sample</h1>
   ));
 
-storiesOf('SampleStory Component', module)
-  .add('Basic Layout', () => (
-    <SampleStory />
-  ));
+
