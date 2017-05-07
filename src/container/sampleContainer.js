@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { changeButtonMsg, changeInputText } from '../actions/sampleActions';
 import {
   Row,
-  Page,
+  PageContainer,
   Jumbotron,
   List,
   ListItem,
@@ -13,6 +13,14 @@ import {
 } from '../components';
 
 class SampleComponentContainer extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.handleButtonClick = this.handleButtonClick.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
+  }
+
   handleButtonClick() {
     const {
       changeButtnMsgDispatch,
@@ -37,7 +45,7 @@ class SampleComponentContainer extends Component {
     } = this.props;
 
     return (
-      <Page>
+      <PageContainer>
         <Row>
           <Jumbotron title="Redux Starter Kit">
             <List>
@@ -59,7 +67,7 @@ class SampleComponentContainer extends Component {
           <Button onClick={this.handleButtonClick} >Change Text</Button>
         </Row>
         <Row>Message: {msg}</Row>
-      </Page>
+      </PageContainer>
     );
   }
 }

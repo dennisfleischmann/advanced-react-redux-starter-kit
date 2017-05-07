@@ -4,12 +4,12 @@ import {
   Grid,
 } from 'react-bootstrap';
 
-const Page = ({ children }) => (
+const PageContainer = ({ children }) => (
   <Grid>{children}</Grid>
 );
 
-Page.propTypes = {
+PageContainer.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Page;
+export default PageContainer;

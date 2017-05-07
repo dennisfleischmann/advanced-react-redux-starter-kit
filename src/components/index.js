@@ -11,15 +11,15 @@ import {
 } from './molecules';
 
 import {
-  Page,
-} from './pages';
+  PageContainer,
+} from './templates';
 
 export {
   List,
   ListItem,
   Row,
   InputBox,
-  Page,
+  PageContainer,
   Jumbotron,
   Button,
 };
